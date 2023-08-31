@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
             sign = "+"
         } else {
             color = MaterialTheme.colorScheme.error
-            sign = "-"
+            sign = ""
         }
         val priceColor =
             if(stock.currentPrice >= stock.lastPrice)

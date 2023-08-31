@@ -19,7 +19,7 @@ data class TradeEntry(
 
 object StockList {
     var stockSymbols : List<String> = listOf(
-        "NVDA", "AAPL", "INTC", "AMD", "AMZN", "BYND", "MSFT", "EXCOF"
+        "NVDA", "AAPL", "INTC", "AMD", "AMZN", "MSFT"
     )
 }
 

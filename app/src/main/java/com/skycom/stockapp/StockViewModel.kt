@@ -51,12 +51,12 @@ class StockViewModel : ViewModel() {
                     val indx =
                         stockData.indexOf(stockData.find { x -> x.symbol == filteredStock.s })
                     if(indx != -1) {
-                        val currentPrice = stockData[indx].currentPrice
+                        val op = stockData[indx].openingPrice
                         val updatedStock = stockData[indx]
                             .copy(
                                 currentPrice = filteredStock.p.roundDecimals(),
                                 changePercentage =
-                                    calculateChangePercentage(filteredStock.p, currentPrice)
+                                    calculateChangePercentage(filteredStock.p, op)
                             )
                         stockData = stockData.toMutableList().also { it[indx] = updatedStock }
                     }
