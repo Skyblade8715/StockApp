@@ -1,2 +1,2 @@
 # StockApp
-Simple Stocks presenting app showcasing the use of Kotlin Flow API, usage of Websocket, and Jetpack Compose.
+Simple Stocks presenting app - updated in real-time via Websocet from https://finnhub.io/
